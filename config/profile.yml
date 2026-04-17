@@ -1,0 +1,72 @@
+# Career-Ops Profile Configuration
+# Ammratansh Ghildyal - MS Business Analytics @ UIUC
+candidate:
+  full_name: "Ammratansh Ghildyal"
+  email: "aghildyal@illinois.edu"
+  phone: ""
+  location: "Champaign, IL"
+  linkedin: "linkedin.com/in/ammratansh-ghildyal"
+  portfolio_url: "https://aghil-hub.github.io/AmmratanshGhildyal.github.io/"
+  github: "github.com/Aghil-hub"
+
+target_roles:
+  primary:
+    - "Data Analyst"
+    - "Business Analyst"
+    - "Analytics Manager"
+    - "Product Analyst"
+    - "AI/ML Analyst"
+  archetypes:
+    - name: "Analytics Manager / Senior Analyst"
+      level: "Senior"
+      fit: "primary"
+    - name: "Business Intelligence Analyst"
+      level: "Mid-Senior"
+      fit: "primary"
+    - name: "Product Analyst"
+      level: "Mid-Senior"
+      fit: "secondary"
+    - name: "AI/Data Strategy Consultant"
+      level: "Senior"
+      fit: "secondary"
+    - name: "Applied AI / LLM Product Analyst"
+      level: "Mid"
+      fit: "adjacent"
+
+narrative:
+  headline: "Analytics leader with 7+ years turning messy data into clear business decisions"
+  exit_story: "Led digital banking analytics at Axis Bank (Senior Manager), then joined UIUC's STEM MS in Business Analytics to deepen AI/ML skills and pivot into US market roles."
+  superpowers:
+    - "End-to-end analytics: SQL, Python, PySpark, Tableau, Qlik"
+    - "Translating complex data into executive-ready insights and stories"
+    - "Digital product analytics and funnel optimization"
+    - "LLM/AI prototyping and applied GenAI experimentation"
+    - "Cross-functional stakeholder management and team leadership"
+  proof_points:
+    - name: "Digital Current Account Analytics at Axis Bank"
+      url: "https://aghil-hub.github.io/AmmratanshGhildyal.github.io/career-details.html#axis-bank"
+      hero_metric: "23% YoY accounts growth, 32% reduction in digital freeze rate"
+    - name: "LLM Research Workspace Prototype (UIUC Practicum)"
+      url: "https://aghil-hub.github.io/AmmratanshGhildyal.github.io/career-details.html#uiuc"
+      hero_metric: "Claude-based prototype for legal/tax LLM research workflows"
+    - name: "Loan Schedule Data Validation at EY"
+      url: "https://aghil-hub.github.io/AmmratanshGhildyal.github.io/career-details.html#ey"
+      hero_metric: "88% reduction in manual verification effort across 2.7M loan schedules"
+    - name: "Reporting Automation at Mu Sigma"
+      url: "https://aghil-hub.github.io/AmmratanshGhildyal.github.io/career-details.html#mu-sigma"
+      hero_metric: "80%+ cut in manual reporting effort; $2M AUD annual savings identified"
+    - name: "Customer Segmentation (K-Means)"
+      url: "https://github.com/Aghil-hub/Customer_Segmentation"
+      hero_metric: "RFM + category-based segmentation for targeted e-commerce campaigns"
+
+compensation:
+  target_range: "$90K-120K"
+  currency: "USD"
+  minimum: "$75K"
+  location_flexibility: "Open to on-site, hybrid, or remote in US"
+
+location:
+  country: "United States"
+  city: "Champaign"
+  timezone: "CST"
+  visa_status: "Will require sponsorship (F-1 OPT/STEM OPT eligible May 2026)"
