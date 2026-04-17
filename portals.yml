@@ -1,0 +1,247 @@
+# Portal Scanner Configuration - Ammratansh Ghildyal
+# Tailored for: Data/Business/Product Analytics, BI, AI/ML Analyst roles in the US
+# Copy of portals.example.yml, customized for Ammratansh's job search
+
+title_filter:
+  positive:
+    # -- Analytics & BI roles --
+    - "Data Analyst"
+    - "Business Analyst"
+    - "Analytics"
+    - "Business Intelligence"
+    - "BI Analyst"
+    - "Product Analyst"
+    - "Marketing Analyst"
+    - "Insights Analyst"
+    - "Data Scientist"
+    - "Analytics Engineer"
+    - "Analytics Manager"
+    - "Decision Scientist"
+    - "Quantitative Analyst"
+    # -- AI/ML related --
+    - "AI Analyst"
+    - "ML Analyst"
+    - "GenAI"
+    - "LLM"
+    - "Applied AI"
+    # -- Strategy / consulting --
+    - "Strategy Analyst"
+    - "Operations Analyst"
+    - "Financial Analyst"
+    - "Risk Analyst"
+  negative:
+    - "Intern"
+    - "Junior"
+    - "Entry Level"
+    - "iOS"
+    - "Android"
+    - "Frontend"
+    - "Backend Developer"
+    - "Software Engineer"
+    - "DevOps"
+    - "Blockchain"
+    - "Crypto"
+    - "Web3"
+    - "COBOL"
+    - "Mainframe"
+    - "SAP "
+    - "Embedded"
+    - "Firmware"
+  seniority_boost:
+    - "Senior"
+    - "Lead"
+    - "Manager"
+    - "Principal"
+    - "Staff"
+    - "Head"
+    - "Director"
+
+search_queries:
+  # -- Greenhouse --
+  - name: Greenhouse — Data Analyst
+    query: 'site:boards.greenhouse.io OR site:job-boards.greenhouse.io "Data Analyst" OR "Business Analyst" OR "Analytics Manager" remote US'
+    enabled: true
+  - name: Greenhouse — Product Analyst
+    query: 'site:boards.greenhouse.io OR site:job-boards.greenhouse.io "Product Analyst" OR "Analytics Engineer" OR "BI Analyst" remote US'
+    enabled: true
+  - name: Greenhouse — AI/ML Analyst
+    query: 'site:boards.greenhouse.io OR site:job-boards.greenhouse.io "AI Analyst" OR "Data Scientist" OR "Applied AI" remote US'
+    enabled: true
+  # -- Ashby --
+  - name: Ashby — Data & Analytics
+    query: 'site:jobs.ashbyhq.com "Data Analyst" OR "Analytics Manager" OR "Business Intelligence" remote'
+    enabled: true
+  - name: Ashby — Product & Insights Analyst
+    query: 'site:jobs.ashbyhq.com "Product Analyst" OR "Insights Analyst" OR "Analytics Engineer" remote'
+    enabled: true
+  # -- LinkedIn / broad boards --
+  - name: LinkedIn — Senior Data Analyst US
+    query: '"Senior Data Analyst" OR "Analytics Manager" SQL Python Tableau remote United States'
+    enabled: true
+  - name: LinkedIn — Business Intelligence Analyst
+    query: '"Business Intelligence Analyst" OR "BI Manager" SQL Tableau OR "Power BI" OR Looker remote US'
+    enabled: true
+  - name: LinkedIn — Product Analytics
+    query: '"Product Analyst" OR "Growth Analyst" SQL Python fintech OR banking OR "financial services" remote US'
+    enabled: true
+  # -- Financial services / banking --
+  - name: FinTech — Data & Analytics
+    query: 'site:boards.greenhouse.io OR site:jobs.ashbyhq.com "Data Analyst" OR "Analytics" fintech OR banking OR payments remote US'
+    enabled: true
+  # -- Consulting / Strategy --
+  - name: Consulting — Analytics
+    query: '"Analytics Consultant" OR "Data Strategy" OR "Decision Scientist" SQL Python remote US'
+    enabled: true
+  # -- Remote job boards --
+  - name: WeWorkRemotely — Analytics
+    query: 'site:weworkremotely.com "Data Analyst" OR "Business Analyst" OR "Analytics" SQL Python'
+    enabled: true
+  - name: Himalayas — Analytics US
+    query: 'site:himalayas.app "Data Analyst" OR "Business Analyst" OR "Analytics Manager" SQL United States'
+    enabled: true
+
+tracked_companies:
+  # -- Big Tech --
+  - name: Google
+    careers_url: https://careers.google.com
+    scan_method: websearch
+    scan_query: 'site:careers.google.com "Data Analyst" OR "Business Analyst" OR "Analytics Manager"'
+    enabled: true
+  - name: Meta
+    careers_url: https://www.metacareers.com
+    scan_method: websearch
+    scan_query: 'site:metacareers.com "Data Analyst" OR "Product Analyst" OR "Analytics"'
+    enabled: true
+  - name: Microsoft
+    careers_url: https://careers.microsoft.com
+    scan_method: websearch
+    scan_query: 'site:careers.microsoft.com "Data Analyst" OR "Business Analyst" OR "Analytics"'
+    enabled: true
+  - name: Amazon
+    careers_url: https://www.amazon.jobs
+    scan_method: websearch
+    scan_query: 'site:amazon.jobs "Business Analyst" OR "Data Analyst" OR "Analytics Manager"'
+    enabled: true
+  - name: Apple
+    careers_url: https://jobs.apple.com
+    scan_method: websearch
+    scan_query: 'site:jobs.apple.com "Data Analyst" OR "Business Analyst" OR "Analytics"'
+    enabled: true
+  # -- Fintech & Banking (relevant to Ammratansh's background) --
+  - name: Stripe
+    careers_url: https://stripe.com/jobs
+    scan_method: websearch
+    scan_query: 'site:stripe.com/jobs "Data Analyst" OR "Analytics" OR "Business Intelligence"'
+    notes: "Fintech leader. Strong analytics team."
+    enabled: true
+  - name: Plaid
+    careers_url: https://plaid.com/careers
+    scan_method: websearch
+    scan_query: 'site:plaid.com/careers "Data Analyst" OR "Analytics" OR "Business Analyst"'
+    notes: "Fintech / banking data infrastructure."
+    enabled: true
+  - name: Chime
+    careers_url: https://job-boards.greenhouse.io/chime
+    api: https://boards-api.greenhouse.io/v1/boards/chime/jobs
+    notes: "US neobank. Strong analytics hiring."
+    enabled: true
+  - name: Brex
+    careers_url: https://job-boards.greenhouse.io/brex
+    api: https://boards-api.greenhouse.io/v1/boards/brex/jobs
+    notes: "Fintech corporate card / spend management."
+    enabled: true
+  - name: Robinhood
+    careers_url: https://job-boards.greenhouse.io/robinhood
+    api: https://boards-api.greenhouse.io/v1/boards/robinhood/jobs
+    notes: "Consumer investing app. Analytics roles."
+    enabled: true
+  - name: Affirm
+    careers_url: https://job-boards.greenhouse.io/affirm
+    api: https://boards-api.greenhouse.io/v1/boards/affirm/jobs
+    notes: "BNPL fintech. Strong data team."
+    enabled: true
+  # -- Analytics & BI Platforms --
+  - name: Tableau (Salesforce)
+    careers_url: https://careers.salesforce.com
+    scan_method: websearch
+    scan_query: 'site:careers.salesforce.com "Data Analyst" OR "Analytics" OR "Business Intelligence"'
+    enabled: true
+  - name: Domo
+    careers_url: https://job-boards.greenhouse.io/domo
+    api: https://boards-api.greenhouse.io/v1/boards/domo/jobs
+    notes: "BI/analytics platform."
+    enabled: true
+  - name: ThoughtSpot
+    careers_url: https://job-boards.greenhouse.io/thoughtspot
+    api: https://boards-api.greenhouse.io/v1/boards/thoughtspot/jobs
+    notes: "AI-powered analytics platform."
+    enabled: true
+  # -- Consulting & Professional Services --
+  - name: McKinsey
+    careers_url: https://www.mckinsey.com/careers
+    scan_method: websearch
+    scan_query: 'site:mckinsey.com/careers "Analyst" OR "Data" OR "Analytics"'
+    enabled: true
+  - name: Deloitte
+    careers_url: https://apply.deloitte.com
+    scan_method: websearch
+    scan_query: 'site:apply.deloitte.com "Data Analyst" OR "Analytics" OR "Business Intelligence"'
+    enabled: true
+  - name: Accenture
+    careers_url: https://www.accenture.com/us-en/careers
+    scan_method: websearch
+    scan_query: 'site:accenture.com/us-en/careers "Data Analyst" OR "Analytics" OR "AI Analyst"'
+    enabled: true
+  # -- AI & Data-driven companies --
+  - name: Palantir
+    careers_url: https://jobs.lever.co/palantir
+    notes: "Data/analytics platform. Strong analyst hiring in US."
+    enabled: true
+  - name: Databricks
+    careers_url: https://job-boards.greenhouse.io/databricks
+    api: https://boards-api.greenhouse.io/v1/boards/databricks/jobs
+    notes: "Data lakehouse platform. Analytics/BI roles."
+    enabled: true
+  - name: Snowflake
+    careers_url: https://job-boards.greenhouse.io/snowflake
+    api: https://boards-api.greenhouse.io/v1/boards/snowflake/jobs
+    notes: "Cloud data platform. Analyst and BI roles."
+    enabled: true
+  - name: Tableau
+    careers_url: https://job-boards.greenhouse.io/tableau
+    scan_method: websearch
+    scan_query: 'site:job-boards.greenhouse.io/tableau "Analyst" OR "Analytics"'
+    enabled: false
+  - name: dbt Labs
+    careers_url: https://job-boards.greenhouse.io/dbtlabs
+    api: https://boards-api.greenhouse.io/v1/boards/dbtlabs/jobs
+    notes: "Analytics engineering platform."
+    enabled: true
+  - name: Looker (Google)
+    careers_url: https://careers.google.com
+    scan_method: websearch
+    scan_query: 'site:careers.google.com "Looker" OR "BI" OR "Business Intelligence" Analyst'
+    enabled: true
+  # -- E-commerce & Retail (Mu Sigma background) --
+  - name: Instacart
+    careers_url: https://job-boards.greenhouse.io/instacart
+    api: https://boards-api.greenhouse.io/v1/boards/instacart/jobs
+    notes: "Grocery delivery. Strong data team."
+    enabled: true
+  - name: Wayfair
+    careers_url: https://job-boards.greenhouse.io/wayfair
+    api: https://boards-api.greenhouse.io/v1/boards/wayfair/jobs
+    notes: "E-commerce. Analyst and BI roles."
+    enabled: true
+  # -- Healthcare / Insurance (Mu Sigma background) --
+  - name: Oscar Health
+    careers_url: https://job-boards.greenhouse.io/oscar
+    api: https://boards-api.greenhouse.io/v1/boards/oscar/jobs
+    notes: "Health insurance. Analytics roles."
+    enabled: true
+  - name: Tempus AI
+    careers_url: https://job-boards.greenhouse.io/tempus
+    scan_method: websearch
+    scan_query: 'site:job-boards.greenhouse.io/tempus "Analyst" OR "Analytics"'
+    notes: "AI-driven precision medicine."
+    enabled: true
